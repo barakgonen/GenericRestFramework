@@ -1,0 +1,15 @@
+{
+    "namespace": "org.bg.avro.structures.base.objects",
+    "type": "record",
+    "name": "NullableTime",
+    "fields": [
+        {
+            "type": [
+                "null",
+                "long"
+            ],
+            "name": "timeMillis",
+            "default": null
+        }
+    ]
+}

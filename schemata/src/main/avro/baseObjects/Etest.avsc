@@ -1,0 +1,7 @@
+{
+  "type": "enum",
+  "name": "Suit",
+  "namespace": "org.bg.avro.structures.base.objects",
+  "symbols": ["SQUARE", "TRIANGLE", "CIRCLE", "FOO"],
+  "default": "TRIANGLE"
+}

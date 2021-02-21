@@ -1,0 +1,12 @@
+{
+    "namespace": "org.bg.avro.structures.base.objects",
+    "type": "record",
+    "name": "Time",
+    "fields": [
+        {
+            "type": "long",
+            "name": "timeMillis",
+            "default": 0
+        }
+    ]
+}
