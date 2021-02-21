@@ -5,6 +5,12 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * User Manual available at https://docs.gradle.org/6.3/userguide/tutorial_java_projects.html
  */
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+}
 
 plugins {
     // Apply the java plugin to add support for Java
@@ -18,11 +24,23 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-}
+    mavenLocal()
+
+        maven {
+            url "https://repo1.maven.org/maven2/"
+        }
+        maven {
+            url "https://packages.confluent.io/maven/"
+        }
+    }
 
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.2-jre'
+    implementation 'org.bg.schemas:schemata:1.0-Init'
+    compile group: 'org.apache.kafka', name: 'kafka_2.13', version: '2.7.0'
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.7.0'
+    compile group: 'io.confluent', name: 'kafka-avro-serializer', version: '6.0.1'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
