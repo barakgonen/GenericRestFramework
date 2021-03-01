@@ -6,6 +6,9 @@ pluginManagement {
             name "JCenter Gradle Plugins"
             url  "https://dl.bintray.com/gradle/gradle-plugins"
         }
+        maven {
+            url "https://jcenter.bintray.com"
+        }
     }
 }
 
@@ -20,4 +23,5 @@ pluginManagement {
 
 rootProject.name = 'GenericRestFramework'
 include 'schemata'
+include 'testMicronaut'
 

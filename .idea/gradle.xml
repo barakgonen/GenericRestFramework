@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/schemata" />
+            <option value="$PROJECT_DIR$/testMicronaut" />
           </set>
         </option>
       </GradleProjectSettings>
